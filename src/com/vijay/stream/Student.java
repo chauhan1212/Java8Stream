@@ -5,14 +5,14 @@ class Student implements Comparable< Student> {
 	int stuAge;
 	String stuName;
 
+	Student() {}
+	
 	Student(int id, int age, String name) {
 		this.stuId = id;
 		this.stuAge = age;
 		this.stuName = name;
 	}
 	
-	
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -22,8 +22,6 @@ class Student implements Comparable< Student> {
 		result = prime * result + ((stuName == null) ? 0 : stuName.hashCode());
 		return result;
 	}
-
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -46,14 +44,6 @@ class Student implements Comparable< Student> {
 		return true;
 	}
 
-
-
-	Student() {
-
-	}
-	
-	
-
 	public int getStuId() {
 		return stuId;
 	}
@@ -71,12 +61,8 @@ class Student implements Comparable< Student> {
 		return "Student [stuId=" + stuId + ", stuAge=" + stuAge + ", stuName=" + stuName + "]";
 	}
 
-
-
 	@Override
 	public int compareTo(Student o) {
 		return this.stuId - o.stuId;
 	}
-	
-	
 }
