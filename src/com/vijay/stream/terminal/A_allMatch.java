@@ -1,10 +1,17 @@
 package com.vijay.stream.terminal;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class A_allMatch {
 	public static void main(String[] args) {
+		
+		String[] abc = new String[]{"Apple","Banana","Orange"};
+		
+		String[] arr1 = {"Apple","Banana","Orange"};
+		
+		List<String> list = new ArrayList<>(Arrays.asList(abc));
         
 		/**
 		 *  01. Check if all elements in a list are even:
@@ -39,15 +46,5 @@ public class A_allMatch {
 
         System.out.println("Are all employees older than 21? " + allAgeGreaterThan21);
         System.out.println("-----------------------------------------------------");
-    }
-}
-
-class Employee {
-    String name;
-    int age;
-
-    Employee(String name, int age) {
-        this.name = name;
-        this.age = age;
     }
 }
